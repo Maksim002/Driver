@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:background="@color/colorPrimaryLight"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/usedMessageTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableTint="@color/gmm_white"
+        android:drawableStart="@drawable/ic_question_warning"
+        android:drawablePadding="16dp"
+        android:padding="16dp"
+        android:text="@string/data_received"
+        android:textColor="@color/gmm_white"
+        tools:ignore="UnusedAttribute" />
+
+</LinearLayout>

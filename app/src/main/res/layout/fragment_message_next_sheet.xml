@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="20sp"
+        android:textColor="@color/color_text"
+        android:text="@string/are_you_sure_you_want_to_get_out"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/returnBtn"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/white_button_styles"
+            android:text="@string/text_no"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/color_text"/>
+
+        <TextView
+            android:id="@+id/sureBtn"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:text="@string/text_yes"
+            android:gravity="center"
+            android:textColor="@color/gmm_white"
+            android:background="@drawable/blue_button_styles"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="10dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/itemProblemPhoto"
+        style="@style/ShapeImagePhoto"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/ShapeImage" />
+
+    <TextView
+        android:id="@+id/textViewData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:layout_gravity="center"
+        android:text="15:23 07.03.22"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/color_text_w"
+        tools:ignore="HardcodedText,SmallSp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+</LinearLayout>

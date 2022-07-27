@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/layoutItem"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imageSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:visibility="gone"
+        android:src="@drawable/ic_star"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Контейнер отсутствует"
+        android:textColor="@color/color_text"
+        android:textSize="12sp"
+        tools:ignore="HardcodedText,UseCompatTextViewDrawableXml" />
+</LinearLayout>

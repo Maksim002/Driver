@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="DisableBaselineAlignment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:padding="4dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/containerCheck"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="5dp"
+                android:buttonTint="@color/grey_color"/>
+
+            <View
+                android:id="@+id/mark"
+                android:background="@drawable/circle_background_text"
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/garbageStatus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black_color"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:gravity="center|left"
+                android:layout_marginStart="5dp"
+                android:background="@color/light_grey_color"
+                android:padding="2dp"
+                android:textSize="10sp"
+                android:text="@string/pick_with_replacement_text"
+                tools:ignore="RtlHardcoded,SmallSp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/containerImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_garbage_cans"
+                    app:tint="@color/color_text_w"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/percentageFillingImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingTop="4dp"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_baseline_done_im_24"
+                    android:backgroundTint="@color/gmm_white"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/percentageFillingImageM"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingTop="4dp"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_lower_space"
+                    android:backgroundTint="@color/gmm_white"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/percentageFilling"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="0%"
+                    android:textSize="6sp"
+                    android:gravity="center"
+                    android:paddingTop="4dp"
+                    android:visibility="gone"
+                    android:textColor="@color/gmm_white"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="SmallSp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layoutTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/containerTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/euro_text"
+                        android:maxLength="10"
+                        android:drawablePadding="10dp"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:textColor="@color/color_text"
+                        tools:ignore="SmallSp,UseCompatTextViewDrawableXml"/>
+
+                    <TextView
+                        android:id="@+id/garbageTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="@color/blue_color"
+                        android:layout_marginStart="10dp"
+                        android:drawablePadding="5dp"
+                        android:textSize="12sp"
+                        android:text="@string/ТБО_text"
+                        tools:ignore="UseCompatTextViewDrawableXml" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:layout_marginStart="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/weightText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawableEnd="@drawable/ic_cube_dimensions"
+                        android:drawablePadding="4dp"
+                        android:visibility="gone"
+                        android:layout_marginEnd="13dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/grey_color"
+                        android:text="6"
+                        tools:ignore="HardcodedText,UseCompatTextViewDrawableXml" />
+
+                    <TextView
+                        android:id="@+id/kilogramText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        android:layout_marginEnd="13dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/grey_color"
+                        android:text="6"
+                        tools:ignore="HardcodedText,UseCompatTextViewDrawableXml" />
+
+                    <TextView
+                        android:id="@+id/statusDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="true"
+                        android:visibility="gone"
+                        android:maxLength="22"
+                        android:textSize="10sp"
+                        android:text="@string/Empty_text"
+                        tools:ignore="SmallSp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layoutCon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="13dp"
+        android:layout_marginStart="40dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/titleMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTint="@color/dark_grey_color"
+            android:drawableStart="@drawable/ic_description_im"
+            android:textSize="10sp"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:textColor="@color/dark_grey_color"
+            android:drawablePadding="5dp"
+            android:visibility="gone"
+            android:text="Заберите и пригласите клининг (Светлана Геннадьевна +79871234556)"
+            tools:ignore="HardcodedText,SmallSp,UnusedAttribute,UseCompatTextViewDrawableXml" />
+
+        <TextView
+            android:id="@+id/messageText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="8sp"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:visibility="gone"
+            android:textColor="@color/dark_grey_message"
+            android:text="Позвоните  +7987657839 Марине Николаевне, место подбора - красный дом  "
+            tools:ignore="HardcodedText,SmallSp" />
+    </LinearLayout>
+</LinearLayout>

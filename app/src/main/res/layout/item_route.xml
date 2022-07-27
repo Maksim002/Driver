@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/shadow_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvRegNumber"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_description"
+                android:drawablePadding="16dp"
+                android:textColor="@color/color_text"
+                android:textSize="16sp"
+                tools:ignore="UseCompatTextViewDrawableXml"
+                tools:text="КЕК27ЛОЛ63" />
+
+            <TextView
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/ic_body"
+                android:drawablePadding="16dp"
+                android:text="ЕН 5092 36 МОН"
+                android:visibility="invisible"
+                android:textColor="@color/color_text"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText,UseCompatTextViewDrawableXml" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvModelName"
+                style="@style/TextAppearance.MaterialComponents.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textColor="@color/gray"
+                tools:ignore="RtlHardcoded"
+                tools:text="ModelName" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                style="@style/TextAppearance.MaterialComponents.Subtitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:drawableStart="@drawable/ic_tame_image"
+                android:drawablePadding="10dp"
+                android:textColor="@color/color_text_w"
+                android:textSize="10sp"
+                tools:ignore="UseCompatTextViewDrawableXml"
+                tools:text="3.05.2020 08:00 - 10:00" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightGrey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ru.telecor.gm.mobile.droid.utils.сomponent.drop.DropDownList
+                android:id="@+id/loaderFirstLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:attr_textColor="@color/color_text_w"
+                app:attr_hint="Грузчик 1"/>
+
+            <ru.telecor.gm.mobile.droid.utils.сomponent.drop.DropDownList
+                android:id="@+id/secondLoaderLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:attr_textColor="@color/color_text_w"
+                app:attr_hint="Грузчик 2" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnContinue"
+            style="?android:borderlessButtonStyle"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="23dp"
+            android:background="@drawable/circle_background_bottom"
+            android:padding="22dp"
+            android:src="@drawable/ic_on_right_image"
+            android:tint="@color/blue_color" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_description"
+                android:drawablePadding="16dp"
+                android:textColor="@color/color_text"
+                tools:ignore="UseCompatTextViewDrawableXml"
+                tools:text="КЕК27ЛОЛ63" />
+
+            <TextView
+                style="@style/TextAppearance.MaterialComponents.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="39dp"
+                android:textColor="@color/gray"
+                tools:text="ModelName" />
+
+            <TextView
+                style="@style/TextAppearance.MaterialComponents.Subtitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:drawableStart="@drawable/ic_tame_image"
+                android:drawablePadding="20dp"
+                android:textColor="@color/color_text_light_blue"
+                tools:ignore="UseCompatTextViewDrawableXml"
+                tools:text="3.05.2020 08:00 - 10:00" />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="@color/color_text"
+            android:paddingStart="26dp"
+            app:icon="@drawable/ic_on_right_image"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+</LinearLayout>

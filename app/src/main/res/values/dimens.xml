@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_margin">8dp</dimen>
+    <dimen name="default_text">10sp</dimen>
+    <dimen name="screen_margin">16dp</dimen>
+    <dimen name="screen_margin_right">24dp</dimen>
+    <dimen name="max_margin">96dp</dimen>
+    <dimen name="medium_margin">48dp</dimen>
+    <dimen name="middle_margin">32dp</dimen>
+    <dimen name="box_roundness">8dp</dimen>
+    <dimen name="_3sdp">3sp</dimen>
+
+</resources>

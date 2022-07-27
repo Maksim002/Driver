@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/screen_margin">
+
+    <LinearLayout
+        android:id="@+id/layoutSte"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/problemHeaderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/screen_margin"
+            android:text="@string/select_problem"
+            android:textColor="@color/warning_text_color"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="bottom"
+            android:fadeScrollbars="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ru.telecor.gm.mobile.droid.utils.сomponent.spinner.SpinnerDropDawn
+                    android:id="@+id/problemDropDownSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/item_margin"
+                    android:layout_marginEnd="@dimen/item_margin" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/itemPhotoRec"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/screen_margin_right"
+                    android:layout_marginTop="@dimen/screen_margin"
+                    android:layout_marginEnd="@dimen/screen_margin_right"
+                    android:orientation="horizontal"
+                    android:nestedScrollingEnabled="false"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_trouble_photo" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/screen_margin_right"
+            android:layout_marginEnd="@dimen/screen_margin_right"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnTakeImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                app:cornerRadius="0dp"
+                android:background="@drawable/blue_button_styles"
+                android:scaleType="center"
+                android:src="@drawable/ic_add_photo" />
+
+            <TextView
+                android:id="@+id/btnItemCancel"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="@dimen/middle_margin"
+                android:layout_weight="1"
+                android:background="@drawable/white_button_styles"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@color/color_text"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/btnItemOk"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="@dimen/item_margin"
+                android:layout_weight="1"
+                android:background="@drawable/white_green_button_style"
+                android:gravity="center"
+                android:textColor="@color/gmm_white"
+                android:text="@string/ok"
+                android:textSize="13sp"
+                app:cornerRadius="0dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

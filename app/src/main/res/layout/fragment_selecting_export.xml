@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="25dp"
+    android:layout_marginRight="16dp"
+    android:background="@drawable/top_bar">
+
+    <LinearLayout
+        android:id="@+id/layoutTopCon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/lau"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/top_bar"
+                    android:orientation="horizontal"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:id="@+id/numButtonOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableStart="@drawable/ic_circle_error"
+                        android:gravity="center"
+                        android:paddingStart="30dp"
+                        android:paddingTop="18dp"
+                        android:paddingEnd="30dp"
+                        android:paddingBottom="18dp"
+                        android:text="@string/problem_text"
+                        android:textColor="@color/color_red_text"
+                        android:textSize="16sp"
+                        tools:ignore="UseCompatTextViewDrawableXml" />
+
+                    <TextView
+                        android:id="@+id/numButtonTwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableStart="@drawable/ic_successfully"
+                        android:gravity="center"
+                        android:paddingStart="30dp"
+                        android:paddingTop="18dp"
+                        android:paddingEnd="30dp"
+                        android:paddingBottom="18dp"
+                        android:text="@string/successfully_text"
+                        android:textColor="@color/green_text"
+                        android:textSize="16sp"
+                        tools:ignore="UseCompatTextViewDrawableXml" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="1dp"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    tools:ignore="UselessParent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="DisableBaselineAlignment">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:id="@+id/profile_bar_zero"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/top_bar_panel"
+                                android:visibility="gone"
+                                tools:ignore="NestedWeights">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/top_bar_panel"
+                                    android:drawableStart="@drawable/ic_circle_error"
+                                    android:gravity="center"
+                                    android:paddingStart="30dp"
+                                    android:paddingTop="18dp"
+                                    android:paddingEnd="30dp"
+                                    android:paddingBottom="18dp"
+                                    android:text="@string/problem_text"
+                                    android:textColor="@color/color_red_text"
+                                    android:textSize="16sp"
+                                    tools:ignore="UseCompatTextViewDrawableXml" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:id="@+id/profile_bar_one"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/top_bar_panel"
+                                android:visibility="visible"
+                                tools:ignore="NestedWeights">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:drawableStart="@drawable/ic_successfully"
+                                    android:gravity="center"
+                                    android:paddingStart="30dp"
+                                    android:paddingTop="18dp"
+                                    android:paddingEnd="30dp"
+                                    android:paddingBottom="18dp"
+                                    android:text="@string/successfully_text"
+                                    android:textColor="@color/green_text"
+                                    android:textSize="16sp"
+                                    tools:ignore="UseCompatTextViewDrawableXml" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ru.telecor.gm.mobile.droid.utils.сomponent.pager.ComponentsViewPager
+                android:id="@+id/profilePager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/top_bar_panel" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

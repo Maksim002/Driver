@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/everything_successful"
+        android:textColor="@color/color_text"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/WeightDisplayedTxt"
+        android:textColor="@color/color_text_w"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/continueRouteBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="27dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:textColor="@color/gmm_white"
+        android:background="@drawable/blue_button_styles"
+        android:padding="16dp"
+        android:text="@string/continue_route" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyLayoutMaven">
+        <attr name="sv_text_maven" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="MyTitle">
+        <attr name="sv_text_tittle" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="MyHit">
+        <attr name="sv_text_hit" format="string" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_gray"
+    tools:context=".ui.tasktrouble.TaskTroubleFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:background="@drawable/circle_background_layout"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/troubleLayoutToolBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/troubleArrowBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_arrow_back_24" />
+
+                <include
+                    android:id="@+id/troubleLayoutComponents"
+                    layout="@layout/item_base_tool_bar"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/troubleTvAddress"
+                style="@style/TextAppearance.MaterialComponents.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:maxLength="35"
+                android:textColor="@color/gmm_white"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toRightOf="@+id/troubleLayoutToolBar"
+                app:layout_constraintRight_toLeftOf="@+id/troubleBtnSettings"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="301085, г. Пировское, ул. Алымов пер, дом 5, квартира 337" />
+
+            <ImageView
+                android:id="@+id/troubleBtnSettings"
+                android:layout_width="25dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/ic_baseline_more_vert_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBar">
+
+        <RelativeLayout
+            android:id="@+id/baseContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolBar">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout2"
+                    style="@style/LayoutStile"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="@dimen/item_margin"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/circle_background_layout_grey_task"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/troubleRvUpContainers"
+                        style="@style/LayoutStile"
+                        android:paddingEnd="14dp"
+                        android:visibility="visible"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:itemCount="2"
+                        tools:listitem="@layout/item_impossible_container" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!--                <androidx.appcompat.widget.AppCompatImageView-->
+                <!--                    android:id="@+id/appCompatImageView"-->
+                <!--                    android:layout_width="32dp"-->
+                <!--                    android:layout_height="32dp"-->
+                <!--                    android:layout_marginStart="-8dp"-->
+                <!--                    android:layout_marginTop="-8dp"-->
+                <!--                    android:background="@drawable/ic_baseline_heartbeat_1_24"-->
+                <!--                    android:backgroundTint="@color/errorRed"-->
+                <!--                    android:scaleType="center"-->
+                <!--                    android:src="@drawable/ic_baseline_done_24"-->
+                <!--                    android:tint="@color/gmm_white"-->
+                <!--                    app:layout_constraintStart_toStartOf="@+id/constraintLayout"-->
+                <!--                    app:layout_constraintTop_toTopOf="@+id/constraintLayout" />-->
+
+                <!--            <androidx.appcompat.widget.AppCompatTextView-->
+                <!--                android:id="@+id/tvTroubleCause"-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_marginTop="@dimen/_3sdp"-->
+                <!--                android:layout_toEndOf="@+id/appCompatImageView"-->
+                <!--                android:background="@drawable/circle_background_text_message"-->
+                <!--                android:paddingStart="5dp"-->
+                <!--                android:paddingEnd="5dp"-->
+                <!--                android:paddingBottom="1dp"-->
+                <!--                android:text="ЗАПАРКОВАНО"-->
+                <!--                android:textColor="@color/errorRed"-->
+                <!--                android:textSize="@dimen/default_text"-->
+                <!--                android:textStyle="bold"-->
+                <!--                app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView"-->
+                <!--                app:layout_constraintStart_toEndOf="@+id/appCompatImageView"-->
+                <!--                app:layout_constraintTop_toTopOf="@+id/appCompatImageView" />-->
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/contS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/constraintLayout"
+                android:layout_marginTop="@dimen/item_margin"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+                <LinearLayout
+                    android:id="@+id/topCon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/circle_background_layout_grey_task"
+                    android:orientation="vertical"
+                    android:padding="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:id="@+id/layoutTask"
+                        style="@style/LayoutStile"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/troubleTaskDetails"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/text_route_details"
+                            android:textColor="@color/color_text"
+                            android:textSize="16sp" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/troubleTaskDetailsIm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_arrow_drop_up_24"
+                            app:tint="@color/color_text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/troubleContainerTask"
+                        style="@style/LayoutStile"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/messageCon"
+                            style="@style/LayoutStile"
+                            android:visibility="gone"
+                            android:layout_marginTop="@dimen/item_margin"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_important" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvTroublePriority"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="6dp"
+                                android:background="@drawable/circle_background_text_message"
+                                android:paddingStart="5dp"
+                                android:paddingEnd="5dp"
+                                android:paddingBottom="1dp"
+                                android:text="@string/trouble_high_text"
+                                android:textColor="@color/black_color"
+                                android:textSize="@dimen/default_text" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/LayoutStile"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:src="@drawable/ic_timer"
+                                app:tint="@color/color_text_w" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvTroublePreferredTimeLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="10dp"
+                                android:drawablePadding="10dp"
+                                android:gravity="center_vertical"
+                                android:text="@string/trouble_accepted_text"
+                                android:textColor="@color/color_text_grey"
+                                android:textSize="@dimen/default_text" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvTroublePreferredTimeText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="4dp"
+                                android:text="сб 16:00 -  вс 12:00"
+                                android:textColor="@color/color_text_w"
+                                android:textSize="12sp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvTroubleFactTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="8dp"
+                                android:gravity="center_vertical"
+                                android:text="@string/trouble_fact"
+                                android:textColor="@color/color_text_grey"
+                                android:textSize="@dimen/default_text" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvTroubleFactTimeText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="4dp"
+                                android:text="16:00"
+                                android:textColor="@color/color_text_w"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/LayoutStile"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="1dp"
+                                android:src="@drawable/ic_counterparty"
+                                tools:ignore="ContentDescription" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvTroubleUserAssignmentText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="8dp"
+                                android:drawablePadding="10dp"
+                                android:text="Борисов А.М"
+                                android:textColor="@color/color_text_grey"
+                                android:textSize="@dimen/default_text" />
+
+                            <TextView
+                                android:id="@+id/tvCustomer"
+                                style="@style/LayoutStile"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_weight="0.7"
+                                android:maxLines="1"
+                                android:textColor="@color/color_text_w"
+                                android:textSize="10sp"
+                                tools:ignore="InefficientWeight,SmallSp"
+                                tools:text="Вывоз РСО" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/iconTorsoLay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:src="@drawable/ic_torso" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvTroubleUserPhoneText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:drawablePadding="10dp"
+                                android:text="+7(987)75-42-33"
+                                android:textColor="@color/color_text_w"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutIconLay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_3sdp"
+                                android:src="@drawable/ic_user_comment"
+                                tools:ignore="ContentDescription" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvTroubleUserCommentText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:drawablePadding="10dp"
+                                android:text="Проезд через арку, объезд здания слева, заезд задом"
+                                android:textColor="@color/color_text_grey"
+                                android:textSize="@dimen/default_text" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contS"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/item_margin"
+                android:background="@drawable/circle_background_layout_grey_task"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/contS">
+
+                <ProgressBar
+                    android:id="@+id/pbLoading"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    android:indeterminate="true"
+                    android:minHeight="1dp"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/btnTroubleImageGallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/screen_margin"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/ic_user_gallery"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTroubleUserGallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/gallery"
+                    android:textColor="@color/color_text_w"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/btnTroubleImageGallery"
+                    app:layout_constraintTop_toTopOf="@+id/btnTroubleImageGallery" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTroubleNotExportText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/item_margin"
+                    android:text="@string/notExportAllCaps"
+                    android:textColor="@color/errorRed"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/btnTroubleImageGallery"
+                    app:layout_constraintTop_toBottomOf="@+id/btnTroubleImageGallery" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvTroubleContainersDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTroubleNotExportText"
+                    app:spanCount="3" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilTroubleReasonDropdownMenu"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:hint="@string/task_trouble_fragment_reason_dropdown_hint"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints">
+
+        <AutoCompleteTextView
+            android:id="@+id/actvTroubleReasonDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="none"
+            android:textEditSuggestionItemLayout="@layout/dropdown_item_trouble_reason"
+            android:visibility="gone" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        style="@style/TextAppearance.MaterialComponents.Headline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/task_trouble_fragment_photo_label"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/ivPhotoTrouble"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_margin="4dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/testpic"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/btnMakePhotoTrouble"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="4dp"
+            android:src="@drawable/ic_baseline_camera_alt_24"
+            android:tint="@color/colorPrimary"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/btnOpenGalleryTrouble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:src="@drawable/ic_baseline_collections_24"
+            android:tint="@color/colorPrimary"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/TextAppearance.MaterialComponents.Headline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/task_trouble_fragment_info_label"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvInfoTrouble"
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="21.07.2020 12:26:49 (59.33044,48.39348) fused"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/button_background_layout_grey"
+        android:padding="8dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:drawablePadding="30dp"
+            android:drawableTint="@color/gmm_white"
+            android:drawableStart="@drawable/ic_completed"
+            android:textColor="@color/gmm_white"
+            android:text="@string/new_enter_the_weight"
+            tools:ignore="UnusedAttribute" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ilPersonnelNumber"
+                style="@style/LoginTextInputLayoutStyleGrey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Вес, кг"
+                android:textColorHint="@color/green_text"
+                app:hintTextColor="@color/green_text"
+                tools:ignore="HardcodedText">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPersonnelNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:inputType="number"
+                    android:padding="19dp"
+                    android:textColor="@color/green_text"
+                    android:textCursorDrawable="@drawable/black_cursor"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilWeight"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_color"
+                android:layout_gravity="center"
+                android:text="@string/kd_net_weight_p"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="right"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/weightCancelBtn"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:layout_marginEnd="3dp"
+                android:text="@string/new_clear"
+                android:textSize="13sp"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/white_button_styles"
+                android:textColor="@color/color_text"/>
+
+            <TextView
+                android:id="@+id/weightSaveBtn"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="3dp"
+                android:text="@string/save_btn"
+                android:textSize="13sp"
+                android:layout_marginEnd="6dp"
+                android:textColor="@color/gmm_white"
+                android:gravity="center"
+                android:background="@drawable/white_green_button_style"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

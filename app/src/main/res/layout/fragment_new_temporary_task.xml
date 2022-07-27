@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".ui.tasknew.NewTemporaryTaskFragment">
+
+    <TextView
+        style="@style/TextAppearance.MaterialComponents.Headline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/new_temporary_task_fragment_title_label" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilNewTemporaryTaskClientDropdownMenu"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:hint="@string/new_temporary_task_fragment_client_dropdown_hint">
+
+        <AutoCompleteTextView
+            android:id="@+id/actvNewTemporaryTaskClientDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:textEditSuggestionItemLayout="@layout/dropdown_item_trouble_reason"
+            tools:ignore="LabelFor" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilNewTemporaryTaskAddressField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:hint="@string/new_temporary_task_fragment_address_field_hint">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietNewTemporaryTaskAddressField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textEditSuggestionItemLayout="@layout/dropdown_item_trouble_reason" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilNewTemporaryTaskDistrictDropdownMenu"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:hint="@string/new_temporary_task_fragment_district_dropdown_hint">
+
+        <AutoCompleteTextView
+            android:id="@+id/actvNewTemporaryTaskDistrictDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:textEditSuggestionItemLayout="@layout/dropdown_item_trouble_reason"
+            tools:ignore="LabelFor" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilNewTemporaryTaskAreaDropdownMenu"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:hint="@string/new_temporary_task_fragment_area_dropdown_hint">
+
+        <AutoCompleteTextView
+            android:id="@+id/actvNewTemporaryTaskAreaDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:textEditSuggestionItemLayout="@layout/dropdown_item_trouble_reason" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnNewTemporaryTaskConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/new_temporary_task_fragment_confirm_button_text" />
+
+</LinearLayout>

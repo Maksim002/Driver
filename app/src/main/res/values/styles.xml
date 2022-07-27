@@ -1,0 +1,137 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/iconColor</item>
+        <item name="colorSecondary">@color/colorPrimaryLight</item>
+        <item name="android:itemTextAppearance">@style/itemTextStyle.AppTheme</item>
+    </style>
+
+    <style name="ButtonPhotoCompleted" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/colorAccent</item>
+        <item name="icon">@drawable/ic_baseline_retry_24</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+    <style name="DialogTheme" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="buttonBarNegativeButtonStyle">@style/AlertNegativeButton</item>
+    </style>
+
+    <style name="AlertNegativeButton" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/dialog_negative_button</item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme"
+        parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:backgroundDimAmount">0.2</item>
+    </style>
+
+
+    <style name="AppModalStyle"
+        parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/rounded_dialog</item>
+    </style>
+
+    <style name="AppBottomLayTheme"
+        parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="bottomSheetStyle">@style/AppModalStyleLay</item>
+    </style>
+
+    <style name="AppModalStyleLay"
+        parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/shadow_background_bottom</item>
+    </style>
+
+    <style name="ProgressBarStyle">
+        <item name="colorAccent">@color/colorPrimaryLight</item>
+    </style>
+
+    <style name="AppTheme.Button" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/gmm_white</item>
+        <item name="strokeColor">@color/gmm_white</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="LoginTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/mtrl_textinput_default_box_stroke_color</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxCornerRadiusTopEnd">0dp</item>
+        <item name="boxCornerRadiusBottomStart">0dp</item>
+        <item name="boxCornerRadiusTopStart">0dp</item>
+        <item name="boxCornerRadiusBottomEnd">0dp</item>
+    </style>
+
+    <style name="style_text_input_layout_blue" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/mtrl_textinput_default_box_stroke_color_blue</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="boxCornerRadiusTopEnd">0dp</item>
+        <item name="boxCornerRadiusBottomStart">0dp</item>
+        <item name="boxCornerRadiusTopStart">0dp</item>
+        <item name="boxCornerRadiusBottomEnd">0dp</item>
+    </style>
+
+    <style name="SearchViewTheme" parent="Widget.AppCompat.Light.SearchView">
+        <item name="android:maxWidth">10000dp</item>
+        <item name="android:editTextColor">@color/gmm_white</item>
+        <item name="android:textColorHint">@color/gmm_white</item>
+    </style>
+
+    <style name="LoginTextInputLayoutStyleGrey" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/mtrl_textinput_default_box_stroke_color_green</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="boxCornerRadiusTopEnd">0dp</item>
+        <item name="boxCornerRadiusBottomStart">0dp</item>
+        <item name="boxCornerRadiusTopStart">0dp</item>
+        <item name="boxCornerRadiusBottomEnd">0dp</item>
+    </style>
+
+    //Стили вёрстки
+    <style name="TextViewStile">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:drawablePadding">16dp</item>
+        <item name="android:textColor">@color/color_text</item>
+    </style>
+
+    <style name="LayoutStile">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Images -->
+    <style name="ShapeImage">
+        <item name="android:background">@drawable/box_grey_</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+        <item name="android:layout_width">112dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="layout_constraintDimensionRatio">W,1:1</item>
+    </style>
+
+    <!-- Images for recycler -->
+    <style name="ShapeImagePhoto">
+        <item name="android:background">@drawable/box_grey_</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">155dp</item>
+        <item name="layout_constraintDimensionRatio">W,1:1</item>
+    </style>
+
+    <style name="itemTextStyle.AppTheme" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textColor">@color/color_text_w</item>
+    </style>
+</resources>

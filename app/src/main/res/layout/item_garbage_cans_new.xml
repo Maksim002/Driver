@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/garbageView"
+            android:layout_width="6dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/circle_green_background_layout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/garbageTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:maxEms="10"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:textAllCaps="true"
+                android:textColor="@color/black_color"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SmallSp"
+                tools:text="Забрать с заменойЗабрать с заменойЗаб" />
+
+            <TextView
+                android:id="@+id/containerTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/circle_background_layout"
+                android:backgroundTint="#F5F5F5"
+                android:maxEms="9"
+                android:maxLines="1"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingEnd="10dp"
+                android:textAllCaps="true"
+                android:textColor="@color/black_color"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/garbageTxt"
+                app:layout_constraintStart_toEndOf="@+id/garbageTxt"
+                app:layout_constraintTop_toTopOf="@+id/garbageTxt"
+                tools:ignore="SmallSp"
+                tools:text="мешок" />
+
+            <RelativeLayout
+                android:id="@+id/containerTypeCount"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/circle_background_text"
+                android:backgroundTint="@color/gray2"
+                android:layout_marginStart="-8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/containerTxt"
+                app:layout_constraintStart_toEndOf="@+id/containerTxt"
+                app:layout_constraintTop_toTopOf="@+id/containerTxt">
+
+                <TextView
+                    android:id="@+id/unloadingElementsTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/gmm_white"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    tools:text="2" />
+            </RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/garbageStatus3"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="25dp"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:layout_margin="2dp"-->
+        <!--            android:background="@drawable/circle_background_layout"-->
+        <!--            android:backgroundTint="#F5F5F5"-->
+        <!--            android:padding="5dp"-->
+        <!--            android:paddingStart="10dp"-->
+        <!--            android:paddingEnd="10dp"-->
+        <!--            android:text="евро 0.66 евро 1.1"-->
+        <!--            android:textAllCaps="true"-->
+        <!--            android:textColor="@color/black_color"-->
+        <!--            android:textSize="10sp"-->
+        <!--            tools:ignore="SmallSp" />-->
+
+        <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center_vertical"-->
+        <!--            android:layout_marginStart="-10dp">-->
+
+        <!--            <ImageView-->
+        <!--                android:id="@+id/commentImage2"-->
+        <!--                android:layout_width="30dp"-->
+        <!--                android:layout_height="30dp"-->
+        <!--                android:background="@drawable/circle_background_text"-->
+        <!--                android:backgroundTint="#C4C4C4"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--            <TextView-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginBottom="3dp"-->
+        <!--                android:text="2"-->
+        <!--                android:textColor="@color/gmm_white"-->
+        <!--                android:textSize="11sp"-->
+        <!--                android:textStyle="bold"-->
+        <!--                app:layout_constraintBottom_toBottomOf="@+id/commentImage2"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintStart_toStartOf="@+id/commentImage2"-->
+        <!--                app:layout_constraintTop_toTopOf="@+id/commentImage2" />-->
+        <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

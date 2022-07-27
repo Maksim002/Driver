@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/toChangeServer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="16dp"
+                android:src="@drawable/ic_refund" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:text="Настройки сервера"
+                android:textColor="@color/color_text"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="16dp"
+                android:src="@drawable/ic_castle_user" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/errorTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:textSize="14sp"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/ilProtocol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/gray"
+            android:hint="Протокол"
+            android:textColor="@color/color_text"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/ilServer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/gray"
+            android:hint="Сервер"
+            android:textColor="@color/color_text"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/ilPort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/gray"
+            android:hint="Порт"
+            android:textColor="@color/color_text"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/ilApplication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/gray"
+            android:hint="Приложение"
+            android:textColor="@color/color_text"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cancellationBtn"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="3dp"
+                android:background="@drawable/white_button_styles"
+                android:gravity="center"
+                android:text="@string/new_clear"
+                android:textColor="@color/color_text"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/btnSave"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:background="@drawable/blue_button_styles"
+                android:text="@string/save_btn"
+                android:textColor="@color/gmm_white"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="АИС Отходы"
+                android:textColor="@color/gray"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/changeServerVersionTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="3.0.137"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

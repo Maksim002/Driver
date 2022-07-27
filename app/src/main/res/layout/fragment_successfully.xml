@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/screen_margin">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp">
+
+            <LinearLayout
+                android:id="@+id/textTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:visibility="gone"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/completed_successfully_text"
+                    android:textColor="@color/color_text"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                tools:ignore="DisableBaselineAlignment"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ilPersonnelNumber"
+                    style="@style/LoginTextInputLayoutStyleGrey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="Объём"
+                    android:textColorHint="@color/green_text"
+                    app:hintTextColor="@color/green_text"
+                    tools:ignore="HardcodedText">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etPersonnelNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:inputType="numberDecimal"
+                        android:imeOptions="actionDone"
+                        android:padding="19dp"
+                        android:textColor="@color/green_text"
+                        android:textCursorDrawable="@drawable/black_cursor"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/screen_margin"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="@dimen/screen_margin"
+                android:layout_weight="1"
+                android:padding="@dimen/_3sdp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:ignore="DisableBaselineAlignment"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.warkiz.widget.IndicatorStayLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.warkiz.widget.IndicatorSeekBar
+                        android:id="@+id/indicator_seekBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:isb_indicator_text_size="18sp"
+                        app:isb_max="1.25"
+                        app:isb_min="0.0"
+                        app:isb_progress="0"
+                        app:isb_ticks_count="6"
+                        app:isb_progress_value_float="true"
+                        app:isb_seek_smoothly="true"
+                        app:isb_show_indicator="rounded_rectangle"
+                        app:isb_show_thumb_text="true"
+                        app:isb_show_tick_marks_type="oval"
+                        app:isb_show_tick_texts="true"
+                        app:isb_thumb_size="25dp"
+                        app:isb_tick_marks_size="12dp"
+                        app:isb_tick_texts_size="16sp"
+                        app:isb_thumb_color="@color/gray"
+                        app:isb_indicator_color="@color/green_text"
+                        app:isb_tick_texts_color="@color/gray"
+                        app:isb_indicator_text_color="@color/gmm_white"
+                        app:isb_track_background_color="@color/green_text"
+                        app:isb_track_background_size="6dp"
+                        app:isb_track_progress_color="@color/green_text"
+                        app:isb_track_progress_size="5dp" />
+
+                </com.warkiz.widget.IndicatorStayLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottomLay"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/screen_margin"
+        android:layout_marginEnd="16dp"
+        android:gravity="bottom|right"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/btnItemCancelSuccessfully"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/middle_margin"
+            android:textColor="@color/color_text"
+            android:background="@drawable/white_button_styles"
+            android:text="@string/cancel" />
+
+        <TextView
+            android:id="@+id/btnItemOkSuccessfully"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/item_margin"
+            android:textColor="@color/gmm_white"
+            android:background="@drawable/green_button_style"
+            android:text="@string/ok" />
+    </LinearLayout>
+</LinearLayout>

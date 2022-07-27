@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/itemTroubleContainerDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_text_w"
+            android:textSize="12sp"
+            tools:text = "15:23 07.03.22"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/itemTroubleContainerImage"
+            style="@style/ShapeImage"
+            android:layout_marginTop="4dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/ShapeImage"
+            android:src="@drawable/img"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

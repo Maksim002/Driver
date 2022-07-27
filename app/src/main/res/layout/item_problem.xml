@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/itemProblemPhoto"
+        style="@style/ShapeImagePhoto"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/ShapeImage" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/itemTroublePhotoRemove"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="-10dp"
+        android:src="@drawable/ic_clear"
+        android:tint="#999999"
+        app:civ_border_color="#DADADA"
+        app:civ_circle_color="#DADADA"
+        app:layout_constraintEnd_toEndOf="@+id/itemProblemPhoto"
+        app:layout_constraintTop_toTopOf="@+id/itemProblemPhoto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

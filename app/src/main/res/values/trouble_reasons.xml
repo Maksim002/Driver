@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="trouble_reasons">
+        <item>Контейнер отсутствует</item>
+        <item>Пожар в контейнере</item>
+        <item>Перегружен</item>
+        <item>ТС заполнено</item>
+        <item>Запарковано</item>
+        <item>Поломка контейнера</item>
+        <item>Отказ клиента</item>
+        <item>Проезд затруднен</item>
+    </string-array>
+</resources>

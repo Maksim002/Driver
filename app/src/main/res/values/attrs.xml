@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DropDownList">
+        <attr name="attr_background" format="integer"/>
+        <attr name="attr_hint" format="string"/>
+        <attr name="attr_textColor" format="reference|color"/>
+    </declare-styleable>
+
+</resources>

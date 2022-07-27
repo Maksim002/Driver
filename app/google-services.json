@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "554852014358",
+    "project_id": "tko-driver",
+    "storage_bucket": "tko-driver.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:554852014358:android:52bb3c3716bece6b1a9837",
+        "android_client_info": {
+          "package_name": "ru.telecor.gm.mobile.truckcrew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "554852014358-rro8ps66hejh9dd3oaqlo22chqs3hnpn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPqC6COedideNeeb1B-mYDLGJ2koJYyLA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "554852014358-rro8ps66hejh9dd3oaqlo22chqs3hnpn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

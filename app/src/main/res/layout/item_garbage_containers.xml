@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/containerTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/circle_background_layout"
+        android:backgroundTint="#F5F5F5"
+        android:maxEms="9"
+        android:maxLines="1"
+        android:paddingTop="5dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="@dimen/item_margin"
+        android:textAllCaps="true"
+        android:textColor="@color/black_color"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SmallSp"
+        tools:text="Пакетированный сбор" />
+
+    <RelativeLayout
+        android:id="@+id/containerTypeCount"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="-8dp"
+        android:background="@drawable/circle_background_text"
+        android:backgroundTint="@color/gray2"
+        app:layout_constraintBottom_toBottomOf="@+id/containerTxt"
+        app:layout_constraintStart_toEndOf="@+id/containerTxt"
+        app:layout_constraintTop_toTopOf="@+id/containerTxt">
+
+        <TextView
+            android:id="@+id/unloadingElementsTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/gmm_white"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            tools:text="1" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

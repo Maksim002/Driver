@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/message_complete_text_title"
+        android:textColor="@color/color_text"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/taskDoneAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/message_address"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/color_text_grey"
+        android:textSize="14sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btnItemCancelRoute"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:textColor="@color/color_text"
+            android:background="@drawable/white_button_styles"
+            android:gravity="center"
+            android:text="@string/cancel" />
+
+        <TextView
+            android:id="@+id/btnItemRoute"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="@dimen/item_margin"
+            android:gravity="center"
+            android:textColor="@color/gmm_white"
+            android:background="@drawable/green_button_style"
+            android:text="@string/ok" />
+    </LinearLayout>
+</LinearLayout>

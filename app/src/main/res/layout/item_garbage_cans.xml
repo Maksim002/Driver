@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            tools:ignore="RtlSymmetry">
+
+            <View
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/circle_background_text" />
+
+            <TextView
+                android:id="@+id/garbageStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_marginStart="5dp"
+                android:background="@color/light_grey_color"
+                android:gravity="center"
+                android:padding="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="ЗАБРАТЬ С ЗАМЕНОЙ"
+                android:textAllCaps="true"
+                android:textColor="@color/black_color"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/ic_garbage_cans"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/containerTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="ЕВРО 1.1"
+                    android:maxLength="15"
+                    android:textColor="@color/dark_text_grey"
+                    android:textSize="12sp"
+                    tools:ignore="SmallSp,UseCompatTextViewDrawableXml" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/garbageTypeTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="ТКО"
+                    android:textColor="@color/color_text_w"
+                    android:textSize="12sp"
+                    tools:ignore="SmallSp,UseCompatTextViewDrawableXml" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/garbageTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableStart="@drawable/ic_warning_im"
+                android:drawablePadding="5dp"
+                android:text="ТБО"
+                android:textColor="@color/color_text_w"
+                android:textSize="12sp"
+                android:visibility="gone"
+                tools:ignore="UseCompatTextViewDrawableXml" />
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/circle_green_background_layout"
+                android:backgroundTint="@color/gray"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/unloadingElementsTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="0/2"
+                    android:textColor="@color/gmm_white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutCon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/titleMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTint="@color/dark_grey_color"
+            android:drawableStart="@drawable/ic_description_im"
+            android:textSize="10sp"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:textColor="@color/dark_grey_color"
+            android:drawablePadding="5dp"
+            android:visibility="gone"
+            android:text="Заберите и пригласите клининг (Светлана Геннадьевна +79871234556)"
+            tools:ignore="HardcodedText,SmallSp,UnusedAttribute,UseCompatTextViewDrawableXml" />
+
+        <TextView
+            android:id="@+id/messageText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="8sp"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:visibility="gone"
+            android:textColor="@color/dark_grey_message"
+            android:text="Позвоните  +7987657839 Марине Николаевне, место подбора - красный дом  "
+            tools:ignore="HardcodedText,SmallSp" />
+    </LinearLayout>
+</LinearLayout>

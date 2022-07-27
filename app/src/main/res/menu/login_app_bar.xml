@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_settings"
+        android:contentDescription="@string/login_settings_menu_description"
+        android:icon="@drawable/ic_settings_fm"
+        android:title="@string/login_settings_menu"
+        app:showAsAction="ifRoom" />
+<!--    <item-->
+<!--        android:id="@+id/menu_about"-->
+<!--        android:contentDescription="@string/login_about_menu_description"-->
+<!--        android:icon="@drawable/ic_baseline_help_24"-->
+<!--        android:title="@string/login_about_menu"-->
+<!--        app:showAsAction="ifRoom" />-->
+</menu>

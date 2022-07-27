@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/changingServerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/ic_server"
+                android:drawablePadding="22dp"
+                android:padding="20dp"
+                android:text="Смена сервера"
+                android:textColor="@color/color_text"
+                android:textSize="20sp"
+                tools:ignore="UseCompatTextViewDrawableXml" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="16dp"
+                android:src="@drawable/ic_castle_user" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/cameraSettingsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:drawableStart="@drawable/ic_photo"
+            android:drawablePadding="22dp"
+            android:padding="20dp"
+            android:text="Настройки камеры"
+            android:textColor="@color/color_text"
+            android:textSize="20sp"
+            tools:ignore="UseCompatTextViewDrawableXml" />
+
+        <TextView
+            android:id="@+id/generalSettingsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:drawableStart="@drawable/ic_mobile_setting"
+            android:drawablePadding="22dp"
+            android:padding="20dp"
+            android:text="Общие настройки"
+            android:textColor="@color/color_text"
+            android:textSize="20sp"
+            tools:ignore="UseCompatTextViewDrawableXml" />
+
+        <TextView
+            android:id="@+id/updatingVersionBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:drawableStart="@drawable/ic_updating_version"
+            android:drawablePadding="22dp"
+            android:padding="20dp"
+            android:text="Обновление версии"
+            android:textColor="@color/color_text"
+            android:textSize="20sp"
+            tools:ignore="UseCompatTextViewDrawableXml" />
+
+        <View
+            android:id="@+id/viewSet"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/lightGrey"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/exitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:drawableStart="@drawable/ic_next_image"
+            android:drawablePadding="22dp"
+            android:padding="20dp"
+            android:text="Выйти"
+            android:textColor="@color/color_text"
+            android:textSize="20sp"
+            android:visibility="invisible"
+            tools:ignore="HardcodedText,UseCompatTextViewDrawableXml" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="АИС Отходы"
+                android:textColor="@color/gray"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/settingVersionTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="3.0.137"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

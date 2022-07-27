@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuSettingsReportBug"
+        android:contentDescription="@string/main_setting_menu_report_bug"
+        android:icon="@drawable/ic_baseline_help_24"
+        android:title="@string/main_setting_menu_report_bug" />
+    <item
+        android:id="@+id/menuSettingsAbout"
+        android:contentDescription="@string/main_setting_menu_about"
+        android:icon="@drawable/ic_baseline_help_24"
+        android:title="@string/main_setting_menu_about" />
+    <item
+        android:id="@+id/menuSettingsLogOut"
+        android:contentDescription="@string/main_setting_menu_logout"
+        android:icon="@drawable/ic_settings_fm"
+        android:title="@string/main_setting_menu_logout" />
+</menu>

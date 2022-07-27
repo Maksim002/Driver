@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="garbage_load_levels">
+        <item>Полный</item>
+        <item>Переполнен</item>
+        <item>Неполный 0,75</item>
+        <item>Половина 0,5</item>
+        <item>Четверть 0,25</item>
+        <item>Невозможно вывезти</item>
+    </string-array>
+</resources>

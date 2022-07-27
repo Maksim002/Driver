@@ -1,0 +1,464 @@
+<resources>
+    <string name="app_name">АРМ Водителя</string>
+
+    <string name="error_base">Произошла ошибка</string>
+    <string name="error_connection_failed">Нет подключения к интернету</string>
+    <string name="error_connection_timeout">Истекло время подключения к серверу. Пожалуйста, попробуйте еще раз.</string>
+    <string name="error_permission_denied">Необходимо дать приложению нужные разрешения</string>
+    <string name="error_photo_required">Обязательны фото до/после</string>
+    <string name="error_photo_required_before">Обязательно фото ДО вывоза</string>
+    <string name="error_photo_required_after">Обязательно фото ПОСЛЕ вывоза</string>
+    <string name="error_duplicate_data">Дублирования данных. При повторном отоброжени,попробуйти перезайти заново в приложение</string>
+    <string name="error_photo_required_trouble">Обязательно фото причины невывоза</string>
+    <string name="error_authorization">Ошибка авторизации</string>
+    <string name="error_route_not_started">Маршрут не был выбран</string>
+
+    <string name="login_personnel_number_hint">Учетная запись</string>
+    <string name="login_button_text">Войти</string>
+    <string name="login_settings_menu">Настройки</string>
+    <string name="login_settings_menu_description">Настройки входа в приложение</string>
+    <string name="login_about_menu">О приложении</string>
+    <string name="login_about_menu_description">Техническая информация о приложении. Такая как версия и разработчик</string>
+    <string name="login_company_name_text">Самая лучшая компания на планете</string>
+    <string name="login_personnel_number_empty_error">Поле обязательно</string>
+    <string name="login_error_snackbar">Ошибка!</string>
+    <string name="login_error_snackbar_action">Подробнее</string>
+    <string name="login_error_dialog_title">Об ошибке</string>
+    <string name="login_error_dialog_negative">Закрыть</string>
+    <string name="login_error_dialog_positive">Отправить отчет</string>
+    <string name="login_activity_update_dialog_title">Доступно обновление!</string>
+    <string name="login_activity_update_dialog_message">Обновление необходимо. Если вы откажетесь от обновления сейчас, приложение закроется</string>
+    <string name="login_activity_update_dialog_positive">Перейти к обновлению</string>
+    <string name="login_activity_update_dialog_negative">Не сейчас</string>
+
+    <string name="login_hello">Здравствуйте, %s, удачной смены!</string>
+    <string name="login_hello_simply">Здравствуйте! Удачной смены!</string>
+    <string name="login_error_message">Введите другой табельный номер</string>
+
+    <string name="about_version_label">Версия приложения</string>
+    <string name="about_update_date_label">Дата обновления</string>
+    <string name="about_last_version_label">Новейшая версия</string>
+    <string name="about_get_last_version_button">Обновиться</string>
+    <string name="about_toolbar_header">О приложении</string>
+
+    <string name="about_activity_update_dialog_title">Доступно обновление</string>
+    <string name="about_activity_update_dialog_message">Доступна новая версия приложения. Необходимо обновиться</string>
+    <string name="about_activity_update_dialog_positive">Обновить</string>
+    <string name="about_activity_update_dialog_negative">Закрыть</string>
+
+    <string name="about_activity_switch_dialog_title">Доступно  "%s" версия приложения</string>
+    <string name="about_activity_switch_dialog_message">Доступна  "%s" версия приложения. Можете переключиться</string>
+    <string name="about_activity_switch_dialog_positive">Установить</string>
+    <string name="about_activity_switch_dialog_negative">Закрыть</string>
+
+    <string name="route_button_start_text">Начать</string>
+    <string name="route_button_continue_text">Продолжить</string>
+
+    <string name="stands_list_header_fact_time_text">Факт</string>
+    <string name="stands_list_header_on_board">На борту</string>
+    <string name="stands_list_header_plan_time_text">План</string>
+    <string name="stands_list_header_address_text">Адрес</string>
+    <string name="stands_list_dumping_button_text">Разгрузка</string>
+    <string name="stands_list_current_task_button_text">К ЗАДАНИЮ</string>
+    <string name="stands_list_nearest_stands_button_text">Рядом</string>
+    <string name="stands_list_no_completed_tasks_error">Нет выполненных заданий. Разгрузка невозможна</string>
+    <string name="stands_list_route_error">Ошибка маршрута</string>
+    <string name="stands_list_dumping_dialog_title">Разгрузка</string>
+    <string name="stands_list_dumping_dialog_message">Вы уверены, что хотите отправиться на разгрузку?</string>
+    <string name="stands_list_dumping_dialog_positive">Да</string>
+    <string name="stands_list_dumping_dialog_negative">Нет</string>
+    <string name="stands_list_dialog_polygon_selection_title">Выберите полигон для разгрузки</string>
+    <string name="stands_list_search_view_text_hint">Введите адрес</string>
+    <string name="stands_list_empty_list_warning"> </string>
+
+    <string name="task_fragment_set_next_button">Выбрать следующей</string>
+    <string name="task_fragment_to_route_button">К Маршруту</string>
+    <string name="task_fragment_navigator_button">Навигатор</string>
+    <string name="task_fragment_qr_scanner_button">Сканер</string>
+    <string name="task_fragment_came_button">Прибыл</string>
+    <string name="task_fragment_contacts_label_text">Контакты</string>
+    <string name="task_fragment_customer_label_text">Контрагент:</string>
+    <string name="task_fragment_address_label_text">МПС ЭкоВтор+</string>
+    <string name="task_fragment_load_level_label_text">Загруженность</string>
+    <string name="task_fragment_note_label_text">Примечание</string>
+    <string name="task_fragment_priority_label_text">Приоритет</string>
+    <string name="task_fragment_transport_state_label_text">Состояние ТС</string>
+    <string name="task_fragment_set_next_two_lines_button">Выбрать &#10;следующей</string>
+    <string name="task_fragment_problem_button">Проблема</string>
+    <string name="task_fragment_geo_permission_denied_message">Невозможно завершить маршрут, если нет доступа к геолокации</string>
+    <string name="dumping_polygon">Полигон</string>
+
+
+    <string name="task_fragment_dialog_positive_button">Погрузка</string>
+    <string name="task_fragment_dialog_negative_button">Невывоз</string>
+    <string name="task_fragment_dialog_title">Маршрутное задание</string>
+
+    <string name="task_fragment_final_task_info">Сдать ключи и планшет</string>
+    <string name="task_fragment_finish_dialog_title">Вы хотите завершить маршрут?</string>
+    <string name="task_fragment_finish_dialog_positive_button">Завершить</string>
+    <string name="task_fragment_finish_dialog_negative_button">Отмена</string>
+
+    <string name="task_fragment_loading_dialog_title">Отправка запроса на полигон, подождите…</string>
+    <string name="task_fragment_polygon_request_dialog_title">Не удалось получить ответ сервера</string>
+    <string name="task_fragment_polygon_request_dialog_message">Попробовать снова?</string>
+    <string name="task_fragment_polygon_internet_message"></string>
+    <string name="task_fragment_polygon_request_dialog_positive">Повтор</string>
+
+    <string name="garbage_load_fragment_photo_before_button">До</string>
+    <string name="garbage_load_fragment_photo_after_button">После</string>
+    <string name="garbage_load_fragment_photo_problem_button">Проблема</string>
+    <string name="garbage_load_fragment_add_button">Добавить</string>
+    <string name="garbage_load_fragment_done_button">Готово</string>
+    <string name="garbage_load_fragment_fill_container_info_warning">Заполните информацию о контейнере</string>
+    <string name="garbage_load_fragment_trouble_photos_needed_warning">Нужны фотографии проблем вывоза контейнеров</string>
+    <string name="garbage_load_dialog_trouble_reason_label">Причина невывоза</string>
+    <string name="garbage_load_result_success">Результат вывоза отправлен на сервер!</string>
+    <string name="garbage_load_flight">Рейс 1</string>
+    <string name="garbage_load_hint_tko">ТКО</string>
+    <string name="garbage_load_number">6</string>
+    <string name="garbage_load_rso_grid_ro">РСО сетка РО</string>
+    <string name="garbage_load_pick_replacement">Забрать с заменой</string>
+
+    <string name="item_garbage_load_dropdown_hint">Степень наполнения контейнера</string>
+
+    <string name="task_trouble_fragment_task_label">Задание</string>
+    <string name="task_trouble_fragment_reason_label">Причина</string>
+    <string name="task_trouble_fragment_reason_dropdown_hint">Выбрать</string>
+    <string name="task_trouble_fragment_photo_label">Фото</string>
+    <string name="task_trouble_fragment_info_label">Информация</string>
+    <string name="task_trouble_fragment_confirm_button">Отправить</string>
+    <string name="task_trouble_fragment_no_reason_warning">Не выбрана причина невывоза</string>
+    <string name="task_trouble_fragment_no_photo_warning">Нет фото</string>
+    <string name="task_trouble_photo_required_message">Необходимо сделать фотографию причины невывоза</string>
+
+    <string name="new_temporary_task_fragment_title_label">Создание временной площадки</string>
+    <string name="new_temporary_task_fragment_client_dropdown_hint">Клиент</string>
+    <string name="new_temporary_task_fragment_address_field_hint">Адрес</string>
+    <string name="new_temporary_task_fragment_district_dropdown_hint">Район</string>
+    <string name="new_temporary_task_fragment_area_dropdown_hint">Участок</string>
+    <string name="new_temporary_task_fragment_confirm_button_text">Принять</string>
+
+    <string name="new_task_fragment_action_dropdown_hint">Действие</string>
+    <string name="new_task_access_checkpoint">Сложный подъезд к КП</string>
+    <string name="new_address">ул. Лесная, 63А</string>
+    <string name="new_task_fragment_container_dropdown_hint">Контейнер</string>
+    <string name="new_task_fragment_contract_dropdown_hint">Договор</string>
+    <string name="new_task_fragment_containers_number_hint">Число контейнеров</string>
+    <string name="new_task_fragment_confirm_button">Создать заявку</string>
+
+    <string name="photo_activity_retry_button">Заново</string>
+    <string name="photo_activity_cancel_button">Отмена</string>
+    <string name="photo_activity_confirm_button">Готово</string>
+
+    <string name="route_home_fragment_route_info_label">Данные о маршруте:</string>
+    <string name="route_home_loading">Загрузка...</string>
+    <string name="route_home_fragment_driver_info_label">Водитель:</string>
+    <string name="route_home_fragment_loader_1_dropdown_hint">Грузчик 1</string>
+    <string name="route_home_fragment_loader_2_dropdown_hint">Грузчик 2</string>
+    <string name="route_home_fragment_finish_button">Завершить</string>
+    <string name="route_home_rollback_finish_button">ВЕРНУТЬСЯ</string>
+    <string name="route_home_fragment_to_route_button">К Маршруту</string>
+    <string name="route_home_fragment_dialog_close_title">Дождитесь окончания загрузки</string>
+    <string name="route_home_fragment_dialog_close_positive">Выйти</string>
+    <string name="route_home_fragment_dialog_close_message">Вы уверены, что хотите выйти?</string>
+    <string name="route_home_fragment_finish_dialog_negative_button">Закрыть</string>
+    <string name="route_home_fragment_nothing_selected_item">Не выбрано</string>
+
+    <string name="dumping_fragment_containers_type_label">Тип</string>
+    <string name="dumping_selection">Подбор</string>
+    <string name="dumping_container_with_very_long_name">Контейнер с очень длинным названием</string>
+    <string name="dumping_plan">План: 4</string>
+    <string name="dumping_fragment_containers_amount_label">Количество</string>
+    <string name="dumping_fragment_containers_volume_label">Объем</string>
+    <string name="dumping_fragment_containers_total_volume_label">Итого</string>
+    <string name="dumping_fragment_warning_text">Вы едете на разгрузку</string>
+    <string name="dumping_fragment_came_btn">Прибыл</string>
+    <string name="address_information">301085, г. Пировское, ул. Алымов пер, дом 5, квартира 337</string>
+    <string name="coupon">Талон:</string>
+    <string name="number_one_h">№ 112</string>
+    <string name="status_new">Новый</string>
+    <string name="scales_number">Весы:</string>
+    <string name="the_clean_scales">Чистый вес: 5000кг</string>
+    <string name="write_out_a_ticket">ВЫПИСАТЬ ТАЛОН</string>
+    <string name="thirty_two">32.0</string>
+    <string name="btn_complete">ЗАВЕРШИТЬ</string>
+    <string name="talon_not_fount">Талон не найден</string>
+
+    <string name="dumping_dialog_title">Взвешивание</string>
+    <string name="dumping_dialog_positive">Готово</string>
+    <string name="dumping_dialog_negative">Отмена</string>
+    <string name="dumping_weight_dialog_hint">Вес</string>
+
+    <string name="server_typical_setting">I am typical setting</string>
+    <string name="server_value_setting">I am value of this setting</string>
+    <string name="server_setting_toggle">I am setting with a toggle</string>
+    <string name="server_settings_name">Настройки</string>
+    <string name="server_settings_protocol">Протокол</string>
+    <string name="server_settings_server">Сервер</string>
+    <string name="server_settings_port">Порт</string>
+    <string name="server_settings_application">Приложение</string>
+    <string name="server_settings_button_text">Сохранить</string>
+    <string name="server_settings_error_text">Заполните это поле</string>
+    <string name="server_settings_title">Настройки сервера</string>
+    <string name="general_settings_title">Общие настройки</string>
+    <string name="camera_settings_title">Настройки камеры</string>
+    <string name="storage_settings_title">Настройки хранилища данных</string>
+    <string name="camera_settings_internal_camera">Встроенная камера</string>
+    <string name="camera_settings_external_camera">Внешняя камера</string>
+    <string name="data_storage_settings_internal_storage">внутреннее хранилище</string>
+    <string name="data_storage_settings_external_storage">Внешнее хранилище</string>
+    <string name="DonGeodata">Не отображать геоданные</string>
+    <string name="DisplayGeodata">Отображать геоданные</string>
+    <string name="Camera_Settings">Настройки камеры</string>
+    <string name="Display_location">Отображать местоположение</string>
+    <string name="Display_photo_type">Отображать тип фотографии</string>
+    <string name="Display_geodata">Отображать геоданные</string>
+    <string name="Display_date_and_time">Отображать дату и время</string>
+
+    <string name="photo_screen_photo_action_delete_description">Удалить фотографию из данного списка. Отменить действие невозможно!</string>
+    <string name="photo_screen_photo_action_delete_title">Удалить</string>
+    <string name="photo_activity_empty_list_warning">Здесь пока нет фотографий</string>
+    <string name="photo_activity_task_trouble_title">Причина невывоза</string>
+    <string name="photo_activity_load_trouble_title">Проблемы с погрузкой</string>
+    <string name="photo_activity_load_after_title">Фото после погрузки</string>
+    <string name="photo_activity_load_before_title">Фото до погрузки</string>
+    <string name="photo_activity_load_trouble_blockage_title">Навал мусора на площадке</string>
+
+    <string name="dialog_route_result_title_result">Загружено</string>
+    <string name="dialog_route_result_title_loading">Выгружаем на сервер…</string>
+    <string name="dialog_route_result_thanks">Спасибо за работу!</string>
+    <string name="dialog_route_result_error">Загрузка не завершена</string>
+    <string name="dialog_route_result_photo_result">Фото</string>
+    <string name="dialog_route_result_route_result">Задания</string>
+    <string name="dialog_estimated_time_of_unloading">Расчётное время выгрузки</string>
+    <string name="dialog_calculation_unloading_time">Расчет времени выгрузки…</string>
+    <string name="estimated_time_not_calculate">Не определено</string>
+    <string name="estimated_time_all_load">Все данные выгружены</string>
+    <string name="estimated_time_load_error">Ошибка при выгрузке данных</string>
+    <string name="dialog_server_error_all_photo_not_sent">Не все фото выгружены на сервер. Попробуйте еще раз. Если ошибка повторится - обратитесь к диспетчеру.</string>
+    <string name="dialog_route_result_exit_button">Выход</string>
+    <string name="dialog_route_result_again_button">Попробовать снова</string>
+    <string name="dialog_route_result_route_completion">Завершение маршрута</string>
+    <string name="dialog_route_result_route_error">Маршрут не завершен</string>
+    <string name="uploading_photos_text">Выгрузка фотографий</string>
+    <string name="changing_route_text">Выгрузка заданий</string>
+    <string name="text_recovery">Вы можете завершить маршрут, отчет об ошибке отправлена разработчикам</string>
+    <string name="text_route_completion">Не успешно выгруженных фотографий: </string>
+    <string name="dialog_route_result_data_preparation">Подготовка данных</string>
+    <string name="dialog_route_result_slow_internet_to_connection">Недостаточная скорость интернета для завершения маршрута. Подключитесь более скоростной сети!</string>
+
+
+    <string name="task_completed_fragment_task_label">Адрес</string>
+    <string name="task_completed_fragment_task_status">Статус: </string>
+    <string name="task_completed_fragment_task_reason">Причина: </string>
+    <string name="task_completed_fragment_task_before">До</string>
+    <string name="task_completed_fragment_task_after">После</string>
+    <string name="task_completed_fragment_task_trouble">Проблема</string>
+    <string name="task_completed_fragment_success">Успешно</string>
+    <string name="task_completed_fragment_partially">Частично успешно</string>
+    <string name="task_completed_fragment_fail">Невывоз</string>
+    <string name="task_completed_fragment_task_reason_container">Проблемы с вывозом контейнеров!</string>
+    <string name="main_setting_menu_logout">Выйти</string>
+    <string name="main_setting_menu_about">О программе</string>
+    <string name="main_setting_menu_report_bug">Сообщить о проблеме</string>
+
+    <string name="logOut_dialog_title">Выход из приложения</string>
+    <string name="logOut_dialog_message">Вы уверены, что хотите выйти из аккаунта?\n\nВсе неотправленные данные будут удалены.</string>
+    <string name="logOut_dialog_yes">Выйти</string>
+    <string name="logOut_dialog_cancel">Отмена</string>
+
+    //TaskFragment
+    <string name="dialog_password_settings_positive_button">Войти</string>
+    <string name="dialog_password_settings_negative_button">Отмена</string>
+    <string name="dialog_password_settings_title">Введите пароль</string>
+    <string name="dialog_password_settings_edit_text">Пароль</string>
+    <string name="item_task_plan_time_title">Планируемое время:</string>
+    <string name="item_task_fact_time_title">Фактическое время:</string>
+    <string name="item_task_preferred_time_title">Рекомендуемое время:</string>
+    <string name="item_task_note_title">Примечание: </string>
+    <string name="item_task_priority_title">Приоритет: </string>
+    <string name="task_fragment_preferred_time_label_text">Разрешенное:</string>
+    <string name="Planned_time_text">Плановое время:</string>
+    <string name="item_garbage_load_count_hint">Количество</string>
+    <string name="item_garbage_load_overweight_count_hint">Переполнены</string>
+
+    <string name="photo_activity_trouble_container_trouble">Невозможно вывести контейнеры</string>
+    <string name="photo_activity_trouble_garbage_trouble">Навал мусора на площадке</string>
+    <string name="item_make_photo">Добавить фото</string>
+    <string name="photo_activity_trouble_load_trouble_title">Проблемы с погрузкой</string>
+    <string name="photo_make_activity_dialog_button_accept">Сохранить</string>
+    <string name="photo_make_activity_dialog_button_decline">Повтор</string>
+    <string name="fragment_garbage_load_pickup_volume_text_field_hint">Объем</string>
+    <string name="containers_history_screen_list_label">Действия с контейнерами</string>
+
+    <string name="qr_scanner_screen_snackbar_add_text">Добавлено!</string>
+    <string name="qr_scanner_screen_snackbar_remove_text">Удалено!</string>
+    <string name="qr_scanner_screen_appbar_label">Сканирование</string>
+    <string name="task_fragment_select_polygon_dialog_title">Вы отправляетесь на разгрузку. Выберите площадку</string>
+    <string name="status_dumping">Статус:</string>
+    <string name="net_weight">Чистый вес: 5000кг</string>
+    <string name="used">Использован</string>
+    <string name="status">Статус:</string>
+    <string name="main_coupon">Талон № 112</string>
+    <string name="polygon">Полигон</string>
+    <string name="Information_about">Ожидается информация о разгрузке.</string>
+    <string name="GPS_permissions" />
+    <string name="btn_yes" />
+    <string name="type_of_scales">Тип весов:</string>
+    <string name="text_short">Короткие</string>
+    <string name="text_short_long">Длинные</string>
+    <string name="text_In_stock">В наличии</string>
+    <string name="text_scales_t">Весы:</string>
+    <string name="new_text">Новый</string>
+    <string name="new_status">Статус:</string>
+    <string name="_112">112</string>
+    <string name="new_talon">Талон №</string>
+    <string name="loading_talon">Талон №</string>
+    <string name="loading_112">112</string>
+    <string name="data_loading">Данные еще не прогрузились</string>
+    <string name="loading_expectation">Ожидаем результатов взвешивания</string>
+    <string name="used_talon">Талон №</string>
+    <string name="used_112">112</string>
+    <string name="used_status">Статус:</string>
+    <string name="used_used">Использован</string>
+    <string name="used_date">Чистый вес:</string>
+    <string name="used_5_000">5.000 кг</string>
+    <string name="used_type">Тип весов:</string>
+    <string name="used_kor">Короткие</string>
+    <string name="requirement">Талон не требуется</string>
+    <string name="requirement_status">Статус:</string>
+    <string name="requirement_nou_talon">Отсутствует талон</string>
+    <string name="requirement_weg">Весы:</string>
+    <string name="requirement_ot">Отсутствуют</string>
+    <string name="nou_talon">Талон не требуется</string>
+    <string name="nou_status">Статус:</string>
+    <string name="nou_talon_talon">Не найден</string>
+    <string name="nou_ses">Простите, у системы не получилось найти талон</string>
+    <string name="nou_svm">Свяжитесь с диспетчером</string>
+    <string name="btn_wait">ПРОДОЛЖИТЬ</string>
+    <string name="btn_cencel_s_s">ОТМЕНА</string>
+    <string name="new_enter_the_weight">Введите вес</string>
+    <string name="new_net_weight_s">Чистый вес:</string>
+    <string name="kd_net_weight_p">кг</string>
+    <string name="new_clear">ОТМЕНА</string>
+    <string name="save_btn">СОХРАНИТЬ</string>
+    <string name="That_he_unloading">Данные о взвешивании получены, вы можете продолжить маршрут!</string>
+    <string name="data_received">Отправляйтесь на разгрузку! Если данные не отобразились, продолжите маршрут.</string>
+    <string name="ready_to_go">Готово, отправляйтесь на разгрузку!</string>
+    <string name="text_no">НЕТ</string>
+    <string name="text_yes">ДА</string>
+    <string name="txt_cancel_unloading">Вы уверены, что хотите отменить разгрузку на полигоне?</string>
+    <string name="WeightDisplayedTxt">Вес поступит в систему чуть позже</string>
+    <string name="continue_route">ПРОДОЛЖИТЬ МАРШРУТ</string>
+    <string name="everything_successful">Всё успешно!</string>
+    <string name="text_wastes">АИС Отходы</string>
+    <string name="text_date">3.0.137</string>
+    <string name="amp_drive">АРМ Водителя</string>
+    <string name="new_version_3_0_137">Доступна новая версия приложения </string>
+    <string name="error_txt_setting">Не удается сформировать URL. Проверьте данные</string>
+    <string name="are_you_sure_you_want_to_get_out">Вы уверены, что хотите выйти?</string>
+    <string name="YES_IM_SURE">ДА, УВЕРЕН</string>
+    <string name="to_return">ВЕРНУТЬСЯ</string>
+    <string name="send_text">ОК</string>
+    <string name="report_problem">Сообщить о проблеме</string>
+    <string name="report_problem_txt">Оставьте сообщение</string>
+    <string name="choose_loader">Выберите Грузчика</string>
+    <string name="go_for_unloading">Вы уверены, что хотите отправиться на разгрузку?</string>
+    <string name="text_update">ОБНОВИТЬ</string>
+    <string name="Are_you_sem_polygon">Полигон Семилукинский \nВы уверены?</string>
+    <string name="continue_without_movers">Продолжить без грузчиков?</string>
+    <string name="an_update_is_needed"> "Необходимо обновление,\n"
+                "если вы его не загрузите, приложение закроется"</string>
+
+    //RouteStands
+    <string name="recommended_text">Рекомендуемое:</string>
+    <string name="text_date_08_00_22_00">Вт 08:00 - Вт 22:00</string>
+    <string name="actual_text">Фактическое:</string>
+    <string name="vt_text_09_47">Вт 09:47</string>
+    <string name="Important_text">Важный</string>
+    <string name="test_site_text">Площадка для теста</string>
+    <string name="name_of_the_unloading_place_text">Наименование места разгрузки</string>
+    <string name="Information_text">Информация:</string>
+    <string name="parking_eko_text">Парковка ЭкоВтор +</string>
+    <string name="there_is_not_single_route_text">Нет ни одного маршрута</string>
+    <string name="refresh_the_page_via_text">Обновите страницу через некоторое время</string>
+
+    //RouteStartFragment
+    <string name="value_name_text">Зубенко Михаил Петрович</string>
+    <string name="text_have_a_good_shift">Удачной смены, Сергей Матвеевич!</string>
+
+    //dumping
+    <string name="find_the_ticket_text">Простите, у системы \nне получилось найти талон</string>
+    <string name="contact_the_dispatcher_text">Свяжитесь с диспетчером</string>
+    <string name="ticket_not_found_text">Талон не найден</string>
+    <string name="scales_text">Тип весов:</string>
+    <string name="scales_text_hor">Тип весов</string>
+    <string name="value_text">"? кг"</string>
+    <string name="vehicle_weight">Вес ТС:</string>
+    <string name="text_total">Вес рейса:</string>
+    <string name="text_total_hor">"? кг"</string>
+    <string name="txt_resume">Далее</string>
+    <string name="txt_ARRIVED">ПРИБЫЛ</string>
+    <string name="txt_resume_dum">ПРОДОЛЖИТЬ</string>
+    <string name="complete_text">ЗАВЕРШИТЬ</string>
+    <string name="location">Локация</string>
+    <string name="text_Routes">Маршруты</string>
+    <string name="qr">qr</string>
+    <string name="update">ОБНОВИТЬ</string>
+    <string name="missing_weights">Отсутствуют весы</string>
+    <string name="first">АРМ Водителя</string>
+    <string name="bottomText">АИС Отходы</string>
+    <string name="_3_0_137">3.0.137</string>
+    <string name="forChangingServerText">Для смены сервера введите пароль</string>
+    <string name="settingCamera">Настройки камеры</string>
+    <string name="choosePoints">Выберите пункты отображения</string>
+    <string name="photoText">Фото грузчиков</string>
+
+    // TroubleFragment
+    <string name="trouble_high_text">Высокий. Круглосуточный подъезд ночью малогабарит</string>
+    <string name="trouble_fact">Фактическое:</string>
+    <string name="trouble_accepted_text">Разрешенное:</string>
+    <string name="gallery">Галерея</string>
+    <string name="notExportAllCaps">ПРОБЛЕМА</string>
+    <string name="select_problem">УКАЖИТЕ ПРОБЛЕМУ</string>
+    <string name="troubleSpinnerHint">Невывоз</string>
+    <string name="cancel">ОТМЕНА</string>
+    <string name="ok">ДА</string>
+    <string name="pick_with_replacement_text">Забрать с заменой</string>
+    <string name="euro_text">ЕВРО 1.1</string>
+    <string name="ТБО_text">ТБО</string>
+    <string name="select_the_capacity_text">Выберите ёмкость или выделите все задания, чтобы выполнить</string>
+    <string name="done_text">ГОТОВО</string>
+    <string name="route_text">МАРШРУТ</string>
+
+    //TaskFragment
+    <string name="text_route_details">Детали</string>
+    <string name="before_loading">ДО ПОГРУЗКИ</string>
+    <string name="after_loading">ПОСЛЕ ПОГРУЗКИ</string>
+    <string name="navigator_text">Навигатор</string>
+    <string name="to_return_text">ВЕРНУТЬСЯ</string>
+    <string name="arrived_text">ПРИБЫЛ</string>
+    <string name="semi_street_text">Семилуки,\nулица Автомобилистов 4 (Казань)</string>
+    <string name="you_have_started_text">Вы приступили к выполнению заданий по адресу:</string>
+    <string name="planned_text">Плановое:</string>
+    <string name="time_text">16:00</string>
+    <string name="number_text">+ 7 (987) 75 - 42 - 33</string>
+    <string name="problem_text">ПРОБЛЕМА</string>
+    <string name="successfully_text">УСПЕШНО</string>
+
+    //GarbageLoadFragment
+    <string name="problem_export_text">ПРОБЛЕМА ВЫВОЗА</string>
+    <string name="bulk_site_text">НАВАЛ НА ПЛОЩАДКЕ</string>
+    <string name="completed_successfully_text">Задание выполнено успешно</string>
+    <string name="Empty_text">Пустой</string>
+    <string name="message_address">Семилуки,\nулица Автомобилистов 4 (Казань)</string>
+    <string name="message_complete_text_title">Вы хотите завершить работы \nна площадке?</string>
+    <string name="mas_action_text">Массовое действие \nневозможно</string>
+    <string name="text_choose_the_typ">Выберите тип фотографии \nи сделайте фото</string>
+    <string name="the_photo_empty_text">Фотогалерея пуста</string>
+    <string name="non_pickup">НЕВЫВОЗ</string>
+    <string name="phone_7_987_75_42_33">+7(987)75-42-33</string>
+    <string name="passage_through_arch">Проезд через арку, объезд здания слева, заезд задом</string>
+    <string name="text_16_00_12_00">сб 16:00 - вс 12:00</string>
+
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/delete_action"
+        android:contentDescription="@string/photo_screen_photo_action_delete_description"
+        android:title="@string/photo_screen_photo_action_delete_title" />
+</menu>

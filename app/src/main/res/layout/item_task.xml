@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutStile"
+    android:background="@color/gmm_white"
+    android:orientation="vertical"
+    android:paddingStart="14dp"
+    android:paddingEnd="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/newLayout"
+        style="@style/LayoutStile"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/layCardView"
+            style="@style/LayoutStile"
+            android:layout_marginStart="25dp"
+            android:background="@drawable/shadow_background"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                style="@style/LayoutStile"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/LayoutStile"
+                    android:layout_marginStart="33dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    tools:ignore="InefficientWeight">
+
+                    <TextView
+                        android:id="@+id/tvTaskAddress"
+                        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="301085, г. Пировское, ул. Алымов пер, дом 5, квартира 337"
+                        android:textColor="@color/color_text"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="HardcodedText" />
+
+                    <LinearLayout
+                        style="@style/LayoutStile"
+                        android:layout_marginTop="3dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_timer"
+                            tools:ignore="ContentDescription" />
+
+                        <LinearLayout
+                            style="@style/LayoutStile"
+                            android:layout_marginStart="10dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                style="@style/LayoutStile"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/recommended_text"
+                                    android:textColor="@color/color_text"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/tvPreferredTime"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/text_date_08_00_22_00"
+                                    android:textColor="@color/color_text"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                style="@style/LayoutStile"
+                                android:layout_marginTop="2dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/actual_text"
+                                    android:textColor="@color/color_text"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/tvFactTimeR"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/vt_text_09_47"
+                                    android:textColor="@color/green_text"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/windowVisibility"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="16dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_see"
+                    app:tint="@color/gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutPriority"
+                style="@style/LayoutStile"
+                android:background="@drawable/shadow_background_con"
+                android:orientation="vertical"
+                android:paddingStart="5dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="5dp"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    tools:ignore="DisableBaselineAlignment">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        tools:ignore="UselessParent">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvPriorityText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_warning_im"
+                            android:drawablePadding="10dp"
+                            android:text="@string/Important_text"
+                            android:textColor="@color/color_red_text"
+                            android:textSize="12sp"
+                            app:drawableTint="@color/color_red_text"
+                            tools:ignore="RtlHardcoded,UseCompatTextViewDrawableXml" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/cansGarbageRes"
+                    style="@style/LayoutStile"
+                    android:visibility="visible"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:itemCount="3"
+                    tools:listitem="@layout/item_garbage_cans" />
+
+                <TextView
+                    android:id="@+id/tvIsHardRoute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvPriority"
+                    android:textColor="@color/color_red_text"
+                    android:textSize="12sp"
+                    android:text="@string/new_task_access_checkpoint"
+                    tools:text="Сложный подъезд к КП"/>
+
+                <TextView
+                    android:id="@+id/forTest"
+                    style="@style/LayoutStile"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/test_site_text"
+                    android:textColor="@color/color_text"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/timelineNew"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:background="@color/gmm_white"
+            android:src="@drawable/ic_check_mark"
+            app:layout_constraintLeft_toLeftOf="@+id/layCardView"
+            app:layout_constraintRight_toLeftOf="@+id/layCardView"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/unloadingLay"
+        style="@style/LayoutStile"
+        android:layout_marginTop="10dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/layUnloading"
+            style="@style/LayoutStile"
+            android:layout_marginStart="25dp"
+            android:background="@drawable/shadow_background"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/unloadingText"
+                style="@style/LayoutStile"
+                android:layout_gravity="center"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="4dp"
+                android:text="@string/name_of_the_unloading_place_text"
+                android:textColor="@color/purple_color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                style="@style/LayoutStile"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="19dp"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_timer"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="9dp"
+                    android:drawablePadding="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/Information_text"
+                    android:textColor="@color/color_text"
+                    android:textSize="12sp"
+                    tools:ignore="RtlHardcoded,UseCompatTextViewDrawableXml" />
+
+                <TextView
+                    android:id="@+id/actualTimeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="@string/vt_text_09_47"
+                    android:textColor="@color/green_text"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/timelineUnloading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="6dp"
+            android:src="@drawable/ic_purple_car"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@+id/layUnloading"
+            app:layout_constraintRight_toLeftOf="@+id/layUnloading"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parkingSpaceLay"
+        style="@style/LayoutStile"
+        android:layout_marginTop="10dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/layParkingSpace"
+            style="@style/LayoutStile"
+            android:layout_marginStart="24dp"
+            android:background="@drawable/shadow_background"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/parkingSpaceText"
+                    style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="16dp"
+                    android:ellipsize="end"
+                    android:text="@string/parking_eko_text"
+                    android:textColor="@color/color_text"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    style="@style/LayoutStile"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="18dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="3dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_timer"
+                        tools:ignore="ContentDescription" />
+
+                    <LinearLayout
+                        style="@style/LayoutStile"
+                        android:layout_marginStart="10dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            style="@style/LayoutStile"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Information_text"
+                                android:layout_weight="1"
+                                android:textSize="12sp"
+                                android:textColor="@color/color_text" />
+
+                            <TextView
+                                android:id="@+id/tvFactTime"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/vt_text_09_47"
+                                android:textColor="@color/color_text"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/timelineParkingSpace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="6dp"
+            android:src="@drawable/ic_parking_space"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@+id/layParkingSpace"
+            app:layout_constraintRight_toLeftOf="@+id/layParkingSpace"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.routehome.RouteHomeFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedLay"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_height="0dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/image_profile"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_image_profile"
+                app:civ_border_color="#00000000"
+                app:civ_border_width="4dp"
+                app:civ_shadow="true"
+                app:civ_shadow_radius="0dp" />
+
+            <TextView
+                android:id="@+id/tvDriverName"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gmm_white"
+                android:layout_margin="4dp"
+                android:textSize="16sp"
+                android:padding="4dp"
+                android:gravity="center"
+                android:text="Зубенко Михаил Петрович"/>
+
+            <LinearLayout
+                android:id="@+id/conDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvVehicleRegNumber"
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_driver_car"
+                    android:layout_weight="1"
+                    android:drawablePadding="16dp"
+                    android:textColor="@color/gmm_white"
+                    android:layout_margin="4dp"
+                    android:padding="2dp"
+                    android:text="A007ОР13"
+                    tools:ignore="UseCompatTextViewDrawableXml" />
+
+                <TextView
+                    android:id="@+id/tvVehicleModel"
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/gmm_white"
+                    android:layout_gravity="center"
+                    android:textSize="14sp"
+                    android:layout_margin="4dp"
+                    android:text="@string/route_home_loading" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:padding="20dp"
+                android:background="@drawable/shadow_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="11dp"
+                    android:textColor="@color/color_text"
+                    android:text="Выберите грузчиков"/>
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/conOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                tools:ignore="MissingDefaultResource">
+
+                <LinearLayout
+                    android:id="@+id/layoutOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle_background_layout_drop"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <include
+                        android:id="@+id/layoutGeneralOne"
+                        layout="@layout/layout_general_on"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle_background_layout_hi"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/color_text_light_blue"
+                    android:text="Грузчик 1"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:textSize="12sp"
+                    app:layout_constraintTop_toTopOf="@+id/layoutOne"
+                    app:layout_constraintBottom_toTopOf="@+id/layoutOne"
+                    app:layout_constraintLeft_toLeftOf="@+id/layoutOne"
+                    tools:ignore="HardcodedText" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/conTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:layout_marginTop="10dp"
+                tools:ignore="MissingDefaultResource">
+
+            <LinearLayout
+                android:id="@+id/layoutTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle_background_layout_drop"
+                android:orientation="vertical"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <include
+                    android:id="@+id/layoutGeneralTwo"
+                    layout="@layout/layout_general_tw"/>
+            </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textHimTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle_background_layout_hi"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/color_text_light_blue"
+                    android:text="Грузчик 2"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:textSize="12sp"
+                    app:layout_constraintTop_toTopOf="@+id/layoutTwo"
+                    app:layout_constraintBottom_toTopOf="@+id/layoutTwo"
+                    app:layout_constraintLeft_toLeftOf="@+id/layoutTwo"
+                    tools:ignore="HardcodedText" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/colorPrimary"
+        android:minHeight="1dp"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/bottomLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:animateLayoutChanges="true"
+        android:padding="16dp"
+        android:background="@drawable/shadow_background_txt"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnRollbackRoute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/gmm_white"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/route_home_fragment_finish_button"
+            android:textColor="@color/color_text"
+            android:visibility="visible"
+            android:padding="16dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnToRoute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="3dp"
+            android:backgroundTint="@color/green_text"
+            android:padding="16dp"
+            android:layout_weight="1"
+            android:text="@string/route_home_fragment_to_route_button"/>
+    </LinearLayout>
+</LinearLayout>
